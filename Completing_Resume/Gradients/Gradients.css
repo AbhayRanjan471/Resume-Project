@@ -1,0 +1,34 @@
+/* Gradient in CSS is a special type of image that is made up of progressive & smooth transition between two or more colors */
+#container{
+    height: 400px;
+    width: 400px;
+    margin: 40px;
+    border: 2px solid black;
+    /* gradient effect */
+    /* we need to specify alteast two color we can also specify the transition start point of perticular color*/
+    /*  we can specify in pixel value as well */
+    /* we can specify the directio of the gradient also */
+    /* (to right) or (to top) or(to top right) */
+    /*starting red, turning cyan at the mid, turning blueat  40% of its length
+      */
+    /* background-image: linear-gradient(to right,red 20px,cyan,blue 40%); */
+    
+    /* we can specify the direction in degree also */
+    /* background-image: linear-gradient(120deg,red 20px,cyan,blue 40%); */
+
+    /* other background gradient effect */
+    background: repeating-linear-gradient(to right bottom  , red  , blue 70px);
+
+    /* background:linear-gradient(red, blue) */
+    
+    /* background: radial-gradient(red,blue); */
+
+    /* background: repeating-radial-gradient(red,blue 20px); */
+    
+}
+
+#container2{
+  height: 150px;
+    width: 300px;
+    background-image: repeating-linear-gradient(45deg, #9e6df9, #f77656 25%, #5ffc87 50%);
+}

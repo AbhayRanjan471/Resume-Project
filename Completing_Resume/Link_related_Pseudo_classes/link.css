@@ -1,0 +1,28 @@
+/* Tip: Use the :visited selector to style links to visited pages,
+ the :hover selector to style links when you mouse over them, and
+  the :active selector to style links when you click on them. */
+
+/* adding a link active state to the anchor tag */
+a:active{
+    /* if we select the link and its active then it will change its color to red */
+    color: red;
+}
+
+p:active{
+    /* if we select the link and its active then it will change its color to cyan color */
+    background-color: cyan;
+}
+
+a:visited{
+    /* if the link is already visited then its color will be changed to green */
+    color: green;
+}
+
+section:target{
+    /* when we will select the particular target that target will change its color to cyan */
+    background-color: cyan;
+}
+
+a:link{
+    background-color: yellow;
+}

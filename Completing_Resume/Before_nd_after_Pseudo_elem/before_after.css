@@ -1,0 +1,53 @@
+p{
+    background-color: lightgrey;
+}
+
+p::before{
+    content: 'Before';
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+p{
+    border: 2px solid black;
+    position: relative;
+}
+
+p::after{
+    position: absolute;
+    content: '';
+    /* adding the background image */
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+    background-image: url(../Before_nd_after_Pseudo_elem/image/logo-switch-to-code.png);
+    background-repeat: no-repeat;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    top: 5px
+    
+    /* padding: 20px; */
+}
+
+ul{
+    list-style: none;
+    /* position: relative; */
+    border: 2px solid black;
+}
+li{
+    /* position: relative; */
+    border: 2px solid black;
+}
+
+li::before{
+    content: '';
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../Before_nd_after_Pseudo_elem/image/Coding_Ninjas_logo.jpeg);
+}
